@@ -66,7 +66,7 @@ set_up_external_storage() {
     ./occ app:enable files_external
     ./occ config:app:set core enable_external_storage --value=yes
     case "${FILES_EXTERNAL_TYPE}" in
-    Owncloud)
+    Webdav)
         wait-for-it owncloud_external:80
         cat > config/config.webdav.php <<DELIM
  <?php

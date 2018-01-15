@@ -144,7 +144,7 @@ services:
     image: owncloud/server:latest
     when:
       matrix:
-        FILES_EXTERNAL_TYPE: Owncloud
+        FILES_EXTERNAL_TYPE: Webdav
 
   oracle:
     image: deepdiver/docker-oracle-xe-11g
