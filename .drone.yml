@@ -245,5 +245,5 @@ matrix:
     - PHP_VERSION: 7.1
       DB_TYPE: sqlite
       TEST_SUITE: phpunit
-      FILES_EXTERNAL_TYPE: Owncloud
+      FILES_EXTERNAL_TYPE: Webdav
       ENABLE_COVERAGE: true
