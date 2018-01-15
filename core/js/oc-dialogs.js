@@ -68,7 +68,7 @@ var OCdialogs = {
 	*/
 	confirm:function(text, title, callback, modal) {
 		return this.message(
-			text,
+			decodeURIComponent(text),
 			title,
 			'notice',
 			OCdialogs.YES_NO_BUTTONS,

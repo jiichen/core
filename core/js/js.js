@@ -1173,7 +1173,7 @@ OC.Notification = {
 	 * @return {jQuery} jQuery element for notification row
 	 */
 	show: function (text, options) {
-		return this.showHtml($('<div/>').text(text).html(), options);
+		return this.showHtml($('<div/>').text(decodeURIComponent(text)).html(), options);
 	},
 
 	/**

@@ -20,7 +20,7 @@
 	OCA.Sharing.showAddExternalDialog = function (share, passwordProtected, callback) {
 		var remote = share.remote;
 		var owner = share.ownerDisplayName || share.owner;
-		var name = share.name;
+		var name = encodeURIComponent(share.name);
 		var remoteClean = (remote.substr(0, 8) === 'https://') ? remote.substr(8) : remote.substr(7);
 
 		if (!passwordProtected) {
